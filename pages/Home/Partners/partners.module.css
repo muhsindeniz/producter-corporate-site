@@ -1,0 +1,194 @@
+.container {
+  padding: 56px 0px 40px 0px;
+  min-height: 368px;
+  width: 100%;
+  background: url(../../../assets/media/partners/partners-bg.png),
+    radial-gradient(50% 765.6% at 50% 50%, #2d70fd 0%, #001747 100%);
+  background-repeat: repeat;
+  background-size: contain;
+  position: relative;
+  overflow-x: auto;
+}
+
+.firstRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondRow {
+  padding: 0px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.card {
+  margin: 16px;
+  width: 96px;
+  min-width: 96px;
+  position: relative;
+  height: 96px;
+  display: flex;
+  box-shadow: 0 2px 7px 0 #00000020;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.012) 100%
+  );
+  background-repeat: repeat-x;
+  background-size: contain;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.card:hover {
+  border: solid 1px #fff;
+  transition: linear 0.2s all;
+  cursor: pointer;
+}
+
+.card:nth-of-type(1) {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.card:nth-of-type(2) {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.card:nth-of-type(3) {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.card:nth-last-child(1) {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.card:nth-last-child(2) {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.card:nth-last-child(3) {
+  opacity: 0.6;
+  cursor: default;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 52px 0px 0px 0px;
+    overflow: hidden;
+    min-height: 320px;
+    background: url(../../../assets/media/partners/partners-mobile-bg.png),
+      -moz-radial-gradient(50% 414.72% at 50% 50%, #2d70fd 0%, #001747 100%) !important;
+    /* Chrome,Safari4+ */
+    background: url(../../../assets/media/partners/partners-mobile-bg.png),
+      -webkit-radial-gradient(50% 414.72% at 50% 50%, #2d70fd 0%, #001747 100%) !important;
+    /* Chrome10+,Safari5.1+ */
+    background: url(../../../assets/media/partners/partners-mobile-bg.png),
+      -o-lradial-gradient(50% 414.72% at 50% 50%, #2d70fd 0%, #001747 100%) !important;
+    /* Opera 11.10+ */
+    background: url(../../../assets/media/partners/partners-mobile-bg.png),
+      -ms-lradial-gradient(50% 414.72% at 50% 50%, #2d70fd 0%, #001747 100%) !important;
+    /* IE10+ */
+    background: url(../../../assets/media/partners/partners-mobile-bg.png),
+      lradial-gradient(50% 414.72% at 50% 50%, #2d70fd 0%, #001747 100%) !important;
+  }
+  .card {
+    margin: 12px;
+    width: 84px;
+    min-width: 84px;
+    height: 84px;
+  }
+}
+/* firstRow
+secondRow */
+
+.card .tooltiptext {
+  visibility: hidden;
+  width: 148px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  transform: translate(-50%, 0);
+  padding: 5px 0;
+  position: absolute;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  z-index: 1;
+  bottom: -50px;
+  left: 50%;
+}
+
+.card .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent rgba(255, 255, 255, 0.16) transparent;
+}
+
+.card:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+/***
+Top After Tooltip
+****/
+
+
+.card .tooltipToptext {
+  visibility: hidden;
+  width: 148px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  transform: translate(-50%, 0);
+  padding: 5px 0;
+  position: absolute;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  z-index: 1;
+  top: -50px;
+  left: 50%;
+}
+
+.card .tooltipToptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: rotate(180deg);
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 255, 255, 0.16) transparent;
+}
+
+.card:hover .tooltipToptext {
+  visibility: visible;
+}

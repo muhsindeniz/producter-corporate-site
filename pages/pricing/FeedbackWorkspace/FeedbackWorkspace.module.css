@@ -1,0 +1,184 @@
+.name::placeholder,
+.surname::placeholder,
+.emailInput::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.container {
+  width: 100%;
+  background: url(../../../assets/media/banner/feedbackBg.png),
+    radial-gradient(50% 414.72% at 50% 50%, #2d70fd 0%, #001747 100%);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  height: 464px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* margin-top: 420px; */
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descContainer {
+  width: 487px;
+  margin-right: 178px;
+  margin-top: 16px;
+}
+
+.joinContainer {
+  width: 400px;
+  margin-bottom: 7px;
+}
+
+.topTitle {
+  text-transform: uppercase;
+  
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 0.005em;
+  opacity: 0.5;
+  margin-bottom: 24px
+}
+
+.title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 32px;
+}
+
+.bottomDesc {
+  font-size: 20px;
+  line-height: 32px;
+  
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.bottomDescLight {
+  
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.8;
+}
+
+.name,
+.surname {
+  height: 57px;
+  padding: 17px 24px 18px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  width: 50%;
+  color: #fff;
+}
+
+.name:focus,
+.surname:focus,
+.emailInput:focus {
+  border: 1px solid #ffffffa6;
+}
+
+.emailInput {
+  width: 100%;
+  height: 57px;
+  padding: 17px 24px 18px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.joinEmail {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.nameSurnameContainer {
+  gap: 16px;
+}
+
+.calenderButton {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  height: 57px;
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    height: max-content !important;
+    padding: 72px 32px !important;
+  }
+
+  .topTitle {
+    display: block;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    line-height: 39px !important;
+    margin-bottom: 16px;
+  }
+
+  .bottomDesc {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 28px !important;
+    margin-bottom: 32px;
+  }
+
+  .joinEmail {
+    gap: 12px;
+  }
+
+  .nameSurnameContainer {
+    gap: 12px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .descContainer{
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 32px !important;
+  }
+
+  .joinContainer{
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}

@@ -1,0 +1,586 @@
+.container {
+  background-image: url(../../assets/media/footer/footer.png),
+    linear-gradient(180deg, #2d70fd 0%, #2d70fd 0.01%, #001747 100%);
+  background-size: contain;
+  background-blend-mode: soft-light;
+  background-repeat: repeat;
+  width: 100%;
+  min-height: 600px;
+  color: #ffffff;
+  position: relative;
+}
+
+.main {
+  padding: 0px 120px;
+  width: 100%;
+}
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  height: 110px;
+}
+
+.rigthArrow {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  opacity: 0.8;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.leftArrow {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  opacity: 0.8;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.rigthArrow > img {
+  margin-left: 11px;
+}
+.leftArrow > img {
+  margin-right: 11px;
+}
+
+.rigthArrow:hover {
+  opacity: 1;
+}
+.leftArrow:hover {
+  opacity: 1;
+}
+
+.divider {
+  width: 100%;
+  opacity: 0.2;
+  border-bottom: 1px solid #e6e9ee;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 61px;
+  padding-right: 35px;
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  min-width: 225px;
+}
+.logo .socialList {
+  display: none !important;
+}
+
+.list > span {
+  font-weight: 500;
+  font-size: 20px !important;
+}
+
+.list > ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.socialList > ul,
+.list > ul {
+  list-style-type: none;
+  padding: initial;
+}
+
+.mobileSocial li svg {
+  opacity: 0.5;
+}
+
+.mobileSocial li svg:hover {
+  opacity: 1;
+  transition: ease 0.3s all;
+  cursor: pointer;
+}
+
+.mobileSocial li svg:hover path {
+  fill: #fff;
+  cursor: pointer;
+}
+
+.socialList li svg {
+  opacity: 0.5;
+}
+
+.socialList li svg:hover {
+  opacity: 1;
+  transition: ease 0.3s all;
+  cursor: pointer;
+}
+
+.socialList li svg:hover path {
+  fill: #fff;
+  cursor: pointer;
+}
+
+.list > ul > li {
+  margin: 24px 0px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: ease 0.3s all;
+}
+.listItem {
+  text-decoration: none;
+  color: #fff;
+  transition: ease 0.3s all;
+  cursor: pointer;
+}
+.listItem:hover {
+  opacity: 1;
+}
+.list > ul > li:first-child {
+  margin-top: 16px;
+}
+.list > ul > li:hover {
+  opacity: 1;
+  transition: ease 0.3s all;
+}
+
+.socialList {
+  margin: 0px;
+  text-align: start;
+}
+.socialList span {
+  font-weight: 500;
+  font-size: 20px;
+}
+.socialList li {
+  padding: 24px 35px 0px 0px;
+}
+
+.menuBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.mobileSocial {
+  display: none;
+}
+.bottomDivider {
+  width: 100vw;
+  opacity: 0.1;
+  border-top: 1px solid #e6e9ee;
+  padding: 0px;
+  margin-top: 23px;
+}
+
+.menuBottomLeft {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuBottomLeft > img {
+  margin-right: 8px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00d8a7;
+  margin-right: 8px;
+}
+
+.mailto {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+.mailto:hover {
+  text-decoration: underline;
+}
+.policies {
+  height: 55px;
+  padding: 0px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.policies > div > span {
+  margin: 0px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: ease 0.3s all;
+}
+
+.policies > div > span:hover {
+  opacity: 1;
+}
+.policies > div > span:first-child {
+  margin-left: 0px;
+}
+.policies > div > span:last-child {
+  margin-right: 0px;
+}
+.tabs {
+  display: flex;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  left: calc(50% - 200px);
+  top: -48px;
+}
+.navigationTab {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 200px;
+  border-radius: 16px 0px 0px 0px;
+  background: rgb(45 112 253 / 10%);
+  color: #2d70fd;
+  background-size: cover;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.waitListTab {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 200px;
+  border-radius: 0px 16px 0px 0px;
+  background: rgb(45 112 253 / 10%);
+  color: #2d70fd;
+  background-size: cover;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.tabsTitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.activeTab {
+  background: url(../../assets/media/footer/active-tab.png), #2d70fd;
+  background-repeat: repeat;
+  background-blend-mode: soft-light;
+  background-size: contain;
+  color: #ffffff;
+  opacity: 1;
+}
+.LogoImage {
+  margin-top: 3px;
+}
+
+.waitlistMain {
+  padding: 52px 120px 0px 120px;
+}
+
+.waitlistheader {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.018em;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 23px;
+}
+
+.waitlisttitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 37px;
+}
+
+.waitlistContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 0px 5px 24px;
+}
+.waitlistHalfInput {
+  width: 242px;
+  height: 54px;
+  opacity: 0.25;
+  background-color: transparent;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  margin: 37px 16px 8px 0px;
+  padding: 17.5px 0px 18.5px 24px;
+  color: #fff;
+}
+
+.waitlistInput {
+  width: 500px;
+  height: 54px;
+  opacity: 0.25;
+  background-color: transparent;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  margin: 8px 16px 8px 0px;
+  padding: 17.5px 0px 18.5px 24px;
+  color: #fff;
+}
+
+.roleSelectInput {
+  width: 500px;
+  height: 54px;
+  opacity: 0.25;
+  background-color: transparent;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  margin: 8px 16px 8px 0px;
+  padding: 14.5px 0px 17px 24px;
+  color: #fff;
+  background: url(../../assets/media/footer/downArrow.png) right center
+    no-repeat;
+  background-position: calc(100% - 24px);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.waitlistHalfInput::placeholder {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  font-feature-settings: "liga" off;
+  opacity: 1;
+}
+
+.waitlistInput::placeholder {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  font-feature-settings: "liga" off;
+  opacity: 1;
+}
+
+.waitlistHalfInput:focus {
+  opacity: 1;
+}
+
+.waitlistInput:focus {
+  opacity: 1;
+}
+
+.roleSelectInput:focus {
+  opacity: 1;
+}
+
+.roleSelectInput > option {
+  background-color: #001747;
+}
+
+.waitlistButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 54px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(238, 238, 238, 0.25);
+  border-radius: 8px;
+  margin: 16px 16px 22px 0px;
+  padding: 17.5px 0px 18.5px 24px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.waitlistButton:hover {
+  border: 1px solid rgb(238, 238, 238, 1);
+}
+
+.waitlistFooterTitle {
+  width: 100%;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.waitlistFooterTitle > strong {
+  color: #ffffff;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    background-image: url(../../assets/media/footer/footerMobileBg.png),
+      linear-gradient(180deg, #2d70fd 0%, #2d70fd 0.01%, #001747 100%);
+    background-repeat: repeat;
+    background-size: contain;
+  }
+  .navigator {
+    height: 90px;
+  }
+  .socialList {
+    display: none !important;
+  }
+  .main {
+    padding: 0px 17px !important;
+  }
+
+  .logo {
+    margin-bottom: 28px !important;
+  }
+  .menu {
+    padding-right: 0px !important;
+    padding-top: 30px;
+  }
+
+  .logo {
+    display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-left: 12px;
+  }
+  .logo img {
+    height: 24px;
+  }
+  .mobileSocial {
+    display: flex !important;
+    justify-content: start;
+    list-style-type: none;
+    width: 100% !important;
+    padding: 0px !important;
+  }
+  .mobileSocial li {
+    margin-right: 10px;
+  }
+  .menuBottom {
+    justify-content: space-between !important;
+  }
+
+  .menuBottomLeft {
+    font-size: 12px !important;
+  }
+
+  .policies {
+    height: 124px;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column !important;
+    padding: 24px 32px 48px 32px;
+  }
+  .tabs {
+    left: calc(50% - 171px);
+  }
+  .tabsTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .navigationTab {
+    width: 171px;
+  }
+
+  .waitListTab {
+    width: 171px;
+  }
+
+  .leftArrow,
+  .rigthArrow {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .rigthArrow > img {
+    margin-left: 4px;
+  }
+  .leftArrow > img {
+    margin-right: 4px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .LogoImage {
+    width: 165px !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .socialList {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .waitlistMain {
+    padding: 48px 24px 0px 24px;
+  }
+  .waitlistContainer {
+    padding: 0px;
+    padding-bottom: 24px;
+  }
+  .waitlistHalfInput {
+    width: 100%;
+    margin: 8px 0px;
+  }
+  .waitlistInput {
+    width: 100%;
+    margin: 8px 0px;
+  }
+  .roleSelectInput {
+    width: 100%;
+    margin: 8px 0px;
+  }
+  .waitlistButton {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+  .formContainer {
+    width: 100%;
+  }
+  .halInputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+}

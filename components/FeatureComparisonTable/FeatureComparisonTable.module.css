@@ -1,0 +1,130 @@
+.tableContainer {
+  width: 100%;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+  padding-left: 34px;
+}
+
+.fixHeader {
+  position: sticky;
+  width: 100%;
+  height: 56px;
+  background: #fff;
+  align-items: center;
+  top: 0;
+  box-shadow: 0 3px 10px 2px rgb(140 151 172 / 10%);
+}
+
+.tableHeaderMainTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #001747;
+  flex: 3;
+}
+
+.tableHeaderColumnTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  border-right: solid 1px rgba(0, 0, 0, 0.1);
+  flex: 2;
+}
+
+.tableHeaderColumnTitle:nth-child(2) {
+  padding-left: 0.6944vw;
+}
+
+.tableHeaderColumnTitle:nth-child(3) {
+  padding-left: 0vw;
+
+}
+
+.tableHeaderColumnTitle:nth-child(4) {
+  padding-left: 0vw;
+}
+
+.tableHeaderColumnTitle:last-child {
+  border-right: none;
+  padding: 0 0.6944vw;
+}
+
+.HeaderColumnIcon {
+  margin-right: 8px;
+}
+
+.divider {
+  border-right: solid 1px gray;
+  height: 56px;
+}
+
+.bodyTitle {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #001747;
+  padding: 34px 0 34px 34px;
+}
+
+.bodyRow .bodyColumn {
+  flex: 2 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.cell {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: solid 1px rgb(0, 22, 71, 0.1);
+  padding: 12px;
+}
+
+.bodyRow .bodyColumn:first-child {
+  flex: 4;
+  justify-content: flex-start;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #8c97ac;
+}
+
+.bodyRow {
+  display: flex;
+  border-bottom: solid 1px rgba(140, 151, 172, 0.03);
+}
+
+.bodyRow:nth-child(2n) {
+  background-color: rgba(140, 151, 172, 0.03);
+}
+
+.subDescription {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #405175;
+  opacity: 0.5;
+}
+
+.packageArrowIcon {
+  width: 16px;
+  height: 16px;
+  margin: 0 16px 0 12px;
+}

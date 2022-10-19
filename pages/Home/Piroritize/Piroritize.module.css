@@ -1,0 +1,140 @@
+.Prirotize {
+  background-image: url("../../../assets/media/footer/footer.png"),
+    radial-gradient(50% 380.5% at 50% 50%, #2d70fd 0%, #001747 100%);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  width: 100%;
+  height: 522px;
+  color: #ffffff;
+  position: relative;
+  margin: 0px;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.Cards {
+  width: 100%;
+  display: flex;
+  height: 522px;
+  padding: 130px 131px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 50px;
+  width: 326px;
+  height: 262px;
+  text-align: center;
+}
+
+.Card .counts {
+  font-size: 84px !important;
+  line-height: 101.66px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-shadow: 0px 2px 7px #00174740 !important;
+}
+
+.CardTitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+  margin-bottom: 28px;
+  opacity: 0.6;
+}
+.HastageType {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px 25px;
+  border-radius: 32px;
+  width: 241px;
+  height: 48px;
+  text-align: center;
+  transition: linear 0.2s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HastageType:hover {
+  border: 1px solid #ffffff;
+  transition: linear 0.2s all;
+}
+
+.Hashtage {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+
+.HastageType {
+  color: #fff;
+  cursor: pointer;
+  transition: ease 0.3s all;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 1024px) {
+  .Cards {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .Card {
+    margin-right: 0px;
+    margin-top: 48px;
+  }
+  .Prirotize {
+    padding: 64px 32px !important;
+    height: 854px !important;
+    background-image: url(../../../assets/media/footer/footerMobileBg.png),
+      radial-gradient(50% 414.72% at 50% 50%, #2d70fd 0%, #001747 100%);
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Cards {
+    padding: 0 !important;
+  }
+
+  .Card {
+    margin: 0 0 48px 0 !important;
+    justify-content: flex-start !important;
+    height: 210px !important;
+  }
+
+  .Card h1 {
+    margin-bottom: 8px !important;
+    font-size: 72px !important;
+    line-height: 87px !important;
+  }
+
+  .CardTitle {
+    margin-bottom: 16px !important;
+    font-size: 16px !important;
+    line-height: 28px !important;
+  }
+
+  .HastageType {
+    width: 212px !important;
+    height: 43px !important;
+  }
+
+  .Hashtage {
+    line-height: 20px !important;
+    font-size: 16px !important;
+  }
+}

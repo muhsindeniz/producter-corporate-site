@@ -1,0 +1,198 @@
+.teamCompanyContainer {
+  width: 100%;
+  height: 306px !important;
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 120px;
+  background: url(../../../assets/media/pricing/pricing-partner-bg.png),
+    radial-gradient(50% 414.72% at 50% 50%, #2D70FD 0%, #001747 100%);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.teamCompanyContainer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #8c97ac;
+  left: 0;
+  opacity: 0.1;
+}
+
+.teamCompanyContainer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #8c97ac;
+  left: 0;
+  top: 235px;
+  opacity: 0.1;
+}
+
+.leftLine::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #8c97ac;
+  left: 32px;
+  top: 0;
+  opacity: 0.1;
+  display: none;
+}
+
+.teamCompanyItem {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  width: 150px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 59px;
+  border: 1px solid rgba(4, 28, 78, 0.1);
+}
+
+.teamCompanyItem:last-child {
+  margin-right: 0px;
+}
+
+.companyImage {
+  width: 80px;
+  opacity: 0.5;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem:hover .companyImage {
+  opacity: 1;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem > img {
+  min-width: 114px;
+  max-height: 32px;
+  opacity: 0.5;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem:hover img {
+  opacity: 1;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem > svg {
+  width: 120px;
+  opacity: 0.5;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem:hover svg {
+  opacity: 1;
+  transition: ease 0.3s all;
+}
+
+.compamyItemTitle {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  color: #fff;
+  width: 150px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  opacity: 0;
+  transition: ease 0.5s all;
+
+  
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+}
+
+.teamCompanyItem:hover {
+  cursor: pointer;
+}
+
+.teamCompanyItem:hover .compamyItemTitle {
+  transition: ease 0.5s all;
+  opacity: 1;
+  bottom: -43px;
+}
+
+@media only screen and (max-width: 991px) {
+  .managementToolTopTitle {
+    font-size: 14px !important;
+    margin-bottom: 14px;
+  }
+
+  .leftLine::after {
+    display: block !important;
+  }
+
+  .title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 16px;
+    min-height: auto;
+  }
+
+  .subDescription {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 21px;
+  }
+
+  .roadMapContainer {
+    height: 620px;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .teamCompanyContainer {
+    height: 307px !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    padding: 72px 32px !important;
+    overflow-x: auto !important;
+  }
+
+  .teamAroundContent {
+    margin: 0 !important;
+  }
+
+  .teamCompanyItem {
+    margin-right: 24px !important;
+    padding: 15px !important;
+    width: 150px !important;
+    height: 120px !important;
+  }
+
+  .managementContainer {
+    margin-top: 81px !important;
+  }
+
+  .joinInput {
+    max-width: 249px !important;
+    width: auto !important;
+    height: 57px !important;
+    outline-color: #fff !important;
+  }
+
+  .teamCompanyContainer::before {
+    width: 300% !important;
+  }
+
+  .teamCompanyContainer::after {
+    width: 300% !important;
+  }
+}

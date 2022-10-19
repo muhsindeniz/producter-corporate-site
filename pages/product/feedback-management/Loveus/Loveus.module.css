@@ -1,0 +1,191 @@
+.container {
+  width: 100%;
+  background: url(../../../../assets/media/product/feedback-management/background.png),
+    radial-gradient(50% 414.72% at 50% 50%, #2d70fd 0%, #001747 100%);
+  background-size: contain;
+  background-blend-mode: soft-light;
+  background-repeat: repeat;
+  width: 100%;
+  padding: 144px 165px 160px 165px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  max-width: 1110px;
+  position: relative;
+}
+
+.header {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.quotesIcon {
+  position: absolute;
+  width: 147px;
+  height: 124px;
+  right: -81px;
+  top: -60px;
+}
+
+.cardSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContainer:first-child {
+  margin-right: 30px;
+}
+.card {
+  position: relative;
+  background: url(../../../../assets/media/product/feedback-management/card-background.png);
+  background-size: contain;
+  width: 540px;
+  height: 192px;
+  padding: 32px;
+  margin-bottom: 43px;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: rotate(180deg);
+  margin-left: -13px;
+  border-width: 13px;
+  border-style: solid;
+  border-color: transparent transparent rgba(255, 255, 255, 0.16) transparent;
+}
+
+.cardHeader {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.cardDesc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.avatarSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.avatarSection > img {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+
+.avatarName {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+}
+
+.avatarPosition {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 105px 0px 72px 32px;
+    background-blend-mode: initial;
+  }
+  .header {
+    width: 299px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -0.01em;
+  }
+  .section {
+    width: 100%;
+  }
+
+  .cardSection {
+    overflow-x: scroll;
+    justify-content: start;
+  }
+
+  .card {
+    height: 270px !important;
+    width: 326px;
+    height: auto;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 24px;
+  }
+
+  .cardContainer:first-child{
+    margin-right: 16px;
+  }
+
+  .secondCard {
+    margin-right: 32px;
+  }
+
+  .cardHeader {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+
+  .cardDesc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+
+  .quotesIcon {
+    position: absolute;
+    width: 157px;
+    height: 132px;
+    right: 22px;
+    top: -73px;
+  }
+}

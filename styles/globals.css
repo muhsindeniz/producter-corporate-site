@@ -1,0 +1,130 @@
+/* START Font Import*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&display=swap');
+/* END Font Import*/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --background-color: #fff;
+  --text-white: #fff;
+  --text-blue: #2d70fd;
+  --text-color: #405175;
+  --text-green: #00d8a7;
+  --text-yellow: #ffd166;
+  --text-pruple: #7b61ff;
+  --text-light-green: #00d4c9;
+  --text-dark-blue: #001747;
+}
+
+.dropdown-toggle {
+  color: #fff !important;
+}
+
+a:hover {
+  color: #fff !important;
+}
+
+h1 {
+  font-size: 84px !important;
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-size: 56px !important;
+  font-family: "Inter", sans-serif;
+}
+
+h3 {
+  font-size: 48px !important;
+  font-family: "Inter", sans-serif;
+}
+
+h4 {
+  font-size: 32px !important;
+  font-family: "Inter", sans-serif;
+}
+
+h5 {
+  font-size: 24px !important;
+  font-family: "Inter", sans-serif;
+}
+
+h6 {
+  font-size: 20px !important;
+  font-family: "Inter", sans-serif;
+}
+
+.home-road-map-tabs-container {
+  display: flex;
+  flex-wrap: nowrap !important;
+  margin-bottom: 16px !important;
+  overflow-x: scroll;
+}
+
+.home-road-map-tabs-container.nav-pills .nav-link.active {
+  background: #ffffff;
+  border: 1px solid #2d70fd;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 7px rgba(0, 23, 71, 0.25);
+  border-radius: 12px;
+  color: var(--text-blue) !important;
+}
+
+.tab-pane.fade.show.active img {
+  border-radius: 16px;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link-passive {
+  pointer-events: none;
+}
+
+.navbar-item-passive {
+  opacity: 0.6 !important;
+}
+
+.home-road-map-tabs-container.nav-pills .nav-link {
+  padding: 12px;
+  font-size: 14px;
+  color: var(--text-white);
+  margin-right: 12px;
+  line-height: 17px;
+  height: 41px;
+  font-weight: 400;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 7px rgba(0, 23, 71, 0.25);
+  border-radius: 12px;
+}
+
+.d-lg-none {
+  display: none;
+}
+
+.d-lg-block {
+  display: block;
+}
+
+.d-lg-flex {
+  display: flex;
+}

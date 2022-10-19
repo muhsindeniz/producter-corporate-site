@@ -1,0 +1,102 @@
+.main {
+  width: auto;
+  height: 120px;
+  position: fixed;
+  top: 40%;
+  z-index: 9999;
+}
+.dots {
+  position: absolute;
+  left: 12px;
+  height: 100%;
+  background: rgb(140, 151, 172, 0.1);
+  border-radius: 12px;
+  min-width: 16px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 8.5px 0px;
+  transition: opacity 0.5s ease;
+}
+
+.main:hover .container {
+  opacity: 1;
+  z-index: 99;
+}
+
+.main:hover .dots {
+  opacity: 0;
+}
+.dotContent {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #405175;
+  opacity: 0.25;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+.container {
+  width: 161px;
+  height: 100%;
+  background: rgb(140, 151, 172, 0.1);
+  border-radius: 0px 12px 12px 0px;
+  padding: 8.5px 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 9px;
+  height: 20%;
+  cursor: pointer;
+}
+
+.item.active {
+  width: 100%;
+  background: rgb(140, 151, 172, 0.2);
+  color: #fff;
+  border-radius: 6px;
+}
+.container.dark .item.active {
+  background: #fff;
+  color: #001747;
+}
+
+.item.active > .dot {
+  opacity: 1;
+}
+
+.container.dark > .item.active > .dot {
+  background-color: #001747;
+}
+.title {
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 17px;
+  color: #8c97ac;
+  margin-left: 8px;
+}
+
+.item.active > .title {
+  color: #405175;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    display: none;
+  }
+}

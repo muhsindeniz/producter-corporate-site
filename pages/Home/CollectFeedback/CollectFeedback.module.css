@@ -1,0 +1,680 @@
+.titleCol {
+  max-width: 550px;
+  position: absolute;
+  top: 190px;
+}
+.title {
+  color: var(--text-blue);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.8;
+  letter-spacing: 0.005em;
+  margin-top: 16px;
+}
+
+.contianer {
+  width: 100%;
+  height: 941px;
+  padding: 125px 125px 108px 121px;
+  overflow: hidden;
+  position: relative;
+}
+
+.lineO {
+  z-index: -2;
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  width: 100vw;
+  height: 48px;
+  background-color: rgba(255, 155, 84, 0.21);
+}
+
+.horizontal {
+  background: #ff9c54;
+  background: linear-gradient(90deg, rgba(255, 156, 84, 0), #ff9c54);
+  width: 100vw;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -2px;
+}
+/* .animationBg {
+  max-width: 1200px;
+  width: 100%;
+  background-image: url(../../../assets/media/animationObject/webAnimBg.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 546px;
+  position: absolute;
+  right: 0px;
+} */
+
+/* .animationRoadMapBg {
+  width: 100%;
+  height: 546px;
+  position: absolute;
+  right: 0px;
+} */
+
+.animationRoadMapBg {
+  position: absolute;
+  bottom: 133px;
+  left: 70px;
+  z-index: -1;
+  width: 909px;
+}
+
+.cardContainer {
+  position: absolute;
+  bottom: -65px;
+  width: 100%;
+  display: flex;
+  margin-top: -20px;
+  margin-bottom: 108px;
+  z-index: 10;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  left: 24%;
+  top: 24%;
+  transform: translate(50%, 50%);
+  animation-delay: 5s;
+  animation: logo infinite 6.1s;
+}
+
+.logo img {
+  width: 96px;
+  height: 96px;
+}
+
+.roadMapContainer {
+  position: absolute;
+  background: url(../../../assets/media/animationObject/emailRoad.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 180%;
+  height: 48px;
+  top: 50%;
+  z-index: -1;
+  transform: translate(50%, -40%);
+  right: -150px;
+}
+
+.horizontal img {
+  width: 85px;
+  height: 112px;
+  position: absolute;
+  top: -70px;
+  left: 260px;
+  opacity: 0;
+  animation-delay: 6.1s !important;
+  animation: email infinite 6.1s;
+}
+
+.sonarWrapper {
+  position: absolute;
+  left: 850px;
+  top: 118px;
+}
+
+.sonarEmitter {
+  position: relative;
+  margin: 32px auto;
+  width: 172px;
+  height: 172px;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0px 0px 2px rgba(64, 81, 117, 0.25);
+}
+
+.sonarWave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  box-shadow: 0px 0px 2px rgba(64, 81, 117, 0.25);
+  border: 0.5px dashed rgba(140, 151, 172, 0.1);
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sonarWave1 {
+  animation: sonarWave 6.3s linear infinite;
+}
+
+.sonarWave2 {
+  animation: sonarWave2 6.3s linear infinite;
+}
+
+.sonarWave3 {
+  animation: sonarWave3 6.3s linear infinite;
+}
+
+.sonarWave4 {
+  animation: sonarWave4 6.3s linear infinite;
+}
+
+.border1 {
+  position: absolute;
+  top: -29px;
+  left: -61px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(64, 81, 117, 0.25);
+  z-index: -1;
+}
+
+.border2 {
+  position: absolute;
+  top: -93px;
+  left: -125px;
+  width: 428px;
+  height: 428px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(64, 81, 117, 0.25);
+  z-index: -1;
+}
+
+.border3 {
+  position: absolute;
+  top: -157px;
+  left: -189px;
+  width: 556px;
+  height: 556px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='50%' ry='50%' stroke='%238C97AC1A' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 100px;
+  z-index: 2;
+}
+
+@keyframes email {
+  0% {
+    transform: translateX(-360px);
+    opacity: 0;
+  }
+  20% {
+    top: -77px;
+    opacity: 1;
+  }
+  100% {
+    top: -77px;
+    transform: translateX(400px);
+    opacity: 1;
+  }
+}
+
+@keyframes sonarWave {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0.3);
+    opacity: 0.1;
+    background-color: HSL(221, 29%, 35%, 0.1);
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0.2;
+  }
+}
+
+@keyframes sonarWave2 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0.4);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(2);
+    background-color: HSL(221, 29%, 35%, 0.2);
+  }
+}
+
+@keyframes sonarWave3 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0.7);
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(2.5);
+    background-color: HSL(221, 29%, 35%, 0.25);
+  }
+}
+
+@keyframes sonarWave4 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(3);
+    background-color: HSL(221, 29%, 35%, 0.4);
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes roadMap {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+/* Edit */
+
+.usersCard {
+  border-radius: 24px;
+  background: rgba(255, 255, 255);
+  border: solid 1.5px rgba(0, 216, 167, 0.5);
+  padding: 20px;
+  box-shadow: 0px 0px 7px rgba(0, 23, 71, 0.2);
+  width: 240px;
+  height: 180px;
+  margin-right: 16px;
+}
+
+.teamCard {
+  border-radius: 24px;
+  background: rgba(255, 255, 255);
+  border: 1.5px solid rgba(255, 209, 102, 0.65);
+  padding: 20px;
+  box-shadow: 0px 0px 4px rgba(0, 23, 71, 0.2);
+  width: 240px;
+  height: 180px;
+  margin-right: 16px;
+}
+
+.productCard {
+  border-radius: 24px;
+  background: rgba(255, 255, 255);
+  border: 1.5px solid rgba(123, 97, 255, 0.5);
+  padding: 20px;
+  box-shadow: 0px 0px 7px rgba(0, 23, 71, 0.2);
+  width: 240px;
+  height: 180px;
+  margin-right: 16px;
+}
+
+.cardUserHeader {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #00d8a7;
+  text-transform: uppercase;
+}
+
+.cardTeamsHeader {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffc642;
+  text-transform: uppercase;
+}
+
+.cardProductHeader {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #7b61ff;
+  text-transform: uppercase;
+}
+
+.CardTabsContainer {
+  width: 100%;
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.defaulticon {
+  display: block;
+}
+.plus {
+  display: none;
+}
+
+.requestFeature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.2;
+  border: 1px solid #8c97ac;
+  border-radius: 16px;
+  flex-direction: column;
+  font-size: 10px;
+  width: 56px;
+  height: 92px;
+  text-align: center;
+}
+
+.requestFeature:hover {
+  cursor: pointer;
+}
+
+.card:not(.activeCard):hover {
+  background-color: rgba(0, 216, 167, 0.1);
+  border: 2px solid rgba(0, 216, 167, 0.5);
+  color: #00d8a7 !important;
+  opacity: 1;
+}
+
+.card:not(.activeCard):hover > .defaulticon {
+  display: none !important;
+}
+.card:not(.activeCard):hover > .plus {
+  display: block !important;
+}
+
+.teamsCard:not(.teamsActiveCard):hover {
+  color: #ffd166 !important;
+  opacity: 1;
+  background: rgba(255, 209, 102, 0.1);
+  border: 2px solid rgba(255, 209, 102, 0.5);
+}
+
+.teamsCard:not(.teamsActiveCard):hover > .defaulticon {
+  display: none !important;
+}
+.teamsCard:not(.teamsActiveCard):hover > .plus {
+  display: block !important;
+}
+
+.strategy:not(.activeProductCard):hover {
+  color: #7b61ff !important;
+  opacity: 1;
+  background: rgba(123, 97, 255, 0.1);
+  border: 2px solid rgba(123, 97, 255, 0.5);
+}
+
+.strategy:not(.activeProductCard):hover > .defaulticon {
+  display: none !important;
+}
+.strategy:not(.activeProductCard):hover > .plus {
+  display: block !important;
+}
+
+.requestFeatureText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.activeCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  color: #fff;
+  border-radius: 16px;
+  flex-direction: column;
+  width: 56px;
+  font-size: 10px;
+  height: 92px;
+  text-align: center;
+  background: #00d8a7;
+  background-clip: padding-box !important;
+  border: 2px solid rgba(0, 216, 167, 0.2);
+  transition: ease 0.3s all;
+}
+
+.teamsActiveCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  color: #fff;
+  border-radius: 16px;
+  flex-direction: column;
+  font-size: 10px;
+  width: 56px;
+  height: 92px;
+  text-align: center;
+  background: #ffd166;
+  background-clip: padding-box !important;
+  border: 2px solid rgba(255, 209, 102, 0.2);
+  transition: ease 0.3s all;
+}
+
+.activeProductCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  color: #fff;
+  border-radius: 16px;
+  flex-direction: column;
+  font-size: 10px;
+  width: 56px;
+  height: 92px;
+  text-align: center;
+  background: #7b61ff;
+  background-clip: padding-box !important;
+  border: 2px solid rgba(123, 97, 255, 0.2);
+  transition: ease 0.3s all;
+}
+
+.requestFeature svg,
+.teamsActiveCard svg,
+.productCard svg {
+  width: 20px;
+  margin-bottom: 8px;
+}
+
+.activeCard svg path,
+.teamsActiveCard svg path,
+.activeProductCard svg path {
+  stroke: white;
+  transition: ease 0.3s all;
+}
+
+.feedbackTooltip {
+  width: 85px;
+  height: 112px;
+  position: absolute;
+  bottom: 210px;
+  z-index: -1;
+  left: 225px;
+  animation: feedback infinite linear 3s;
+  offset-path: path(
+    "M1 362.128V280.128C1.33333 247.295 21.5 181.628 99.5 181.628C177.5 181.628 526.667 181.628 691.5 181.628C729 181.128 804 154.728 804 69.1284C804 -16.4716 804 -4.87162 804 11.6284"
+  );
+}
+
+.feedbackTooltip img {
+  width: 85px;
+  height: 112px;
+}
+
+@keyframes feedback {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+  10% {
+    offset-distance: 10%;
+    opacity: 1;
+  }
+  90% {
+    offset-distance: 90%;
+    opacity: 1;
+    left: 235px;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+.teamTooltip {
+  width: 85px;
+  height: 112px;
+  position: absolute;
+  z-index: -1;
+  bottom: 220px;
+  left: 475px;
+  animation: team infinite linear 3s;
+  offset-path: path(
+    "M1.00426 370.972V290.972C0.670922 258.306 19.8043 192.972 99.0043 192.972C178.204 192.972 356.338 192.972 435.504 192.972C473.171 191.972 548.504 167.972 548.504 79.9722C548.504 -8.02778 548.504 -6.02778 548.504 5.97222"
+  );
+}
+
+.teamTooltip img {
+  width: 85px;
+  height: 112px;
+}
+
+@keyframes team {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+  10% {
+    offset-distance: 10%;
+    opacity: 1;
+  }
+  90% {
+    offset-distance: 90%;
+    opacity: 1;
+    left: 484px;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+.roadTooltip {
+  width: 85px;
+  height: 112px;
+  position: absolute;
+  z-index: -1;
+  bottom: 160px;
+  left: 730px;
+  animation: roadMap infinite linear 3s;
+  offset-path: path(
+    "M1 307V229C2.33333 195.167 24.5 127.5 102.5 127.5H167C231 127.5 298 112 293.5 1"
+  );
+}
+
+.roadTooltip img {
+  width: 85px;
+  height: 112px;
+}
+
+@keyframes roadMap {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+  10% {
+    offset-distance: 10%;
+    opacity: 1;
+  }
+  90% {
+    offset-distance: 90%;
+    opacity: 1;
+    left: 740px;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+.radarChatContainer {
+  position: absolute;
+  left: 865px;
+}
+
+.radarCheckContainer {
+  position: absolute;
+  left: 821px;
+  top: 330px;
+}
+
+.radarCheckPurpleContainer {
+  position: absolute;
+  left: 1150px;
+  top: 590px;
+}
+
+.radarDocumentContainer {
+  position: absolute;
+  left: 1003px;
+  top: 194px;
+}
+
+.radarExplorerContainer {
+  position: absolute;
+  left: 1150px;
+  top: 430px;
+}
+
+.radarSoundContainer {
+  position: absolute;
+  left: 1180px;
+  top: 177px;
+}
+
+.radarChatContainer img,
+.radarCheckContainer img,
+.radarCheckPurpleContainer img,
+.radarDocumentContainer img,
+.radarExplorerContainer img,
+.radarSoundContainer img {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contianer {
+    height: 1794px !important;
+    padding: 72px 24px !important;
+  }
+}

@@ -1,0 +1,572 @@
+.container {
+  width: 100%;
+  height: 1794px;
+  padding: 72px 24px 104px 24px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 48px;
+  color: #2d70fd;
+  font-weight: 600;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #405175;
+  opacity: 0.8;
+  font-style: normal;
+  width: 80%;
+}
+
+.soundTrack {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #e2e7f2;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.descriptionContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.louncContainer {
+  width: 100%;
+  position: relative;
+  margin-top: 48px;
+  height: 1478px;
+}
+
+.usersCard {
+  border-radius: 24px;
+  background: rgba(255, 255, 255);
+  border: solid 1.5px rgba(0, 216, 167, 0.2);
+  padding: 20px;
+  margin-bottom: 148px;
+  box-shadow: 0px 0px 4px rgba(0, 216, 167, 0.2);
+}
+
+.teamCard {
+  border-radius: 24px;
+  background: rgba(255, 255, 255);
+  border: 1.5px solid rgba(255, 209, 102, 0.2);
+  padding: 20px;
+  margin-bottom: 148px;
+  box-shadow: 0px 0px 4px rgba(0, 255, 209, 0.2);
+}
+
+.productCard {
+  border-radius: 24px;
+  background: rgba(255, 255, 255);
+  border: 1.5px solid rgba(123, 97, 255, 0.2);
+  padding: 20px;
+  margin-bottom: 148px;
+  box-shadow: 0px 0px 4px rgba(123, 97, 255, 0.2);
+}
+
+.cardUserHeader {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #00d8a7;
+  text-transform: uppercase;
+}
+
+.cardTeamsHeader {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffc642;
+  text-transform: uppercase;
+}
+
+.cardProductHeader {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #7b61ff;
+  text-transform: uppercase;
+}
+
+.CardTabsContainer {
+  width: 100%;
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.requestFeature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  border: 1px solid #8c97ac;
+  border-radius: 16px;
+  flex-direction: column;
+  width: 90px;
+  height: 92px;
+  text-align: center;
+}
+
+.requestFeatureText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.activeCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  color: #fff;
+  border-radius: 16px;
+  flex-direction: column;
+  width: 90px;
+  height: 92px;
+  text-align: center;
+  background: #00d8a7;
+  border: 4px solid rgba(0, 216, 167, 0.2) !important;
+  transition: ease 0.3s all;
+}
+
+.teamsActiveCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  color: #fff;
+  border-radius: 16px;
+  flex-direction: column;
+  width: 90px;
+  height: 92px;
+  text-align: center;
+  background: #ffd166;
+  border: 4px solid rgba(255, 209, 102, 0.2) !important;
+  transition: ease 0.3s all;
+}
+
+.activeProductCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  color: #fff;
+  border-radius: 16px;
+  flex-direction: column;
+  width: 90px;
+  height: 92px;
+  text-align: center;
+  background: #7b61ff;
+  border: 4px solid rgba(123, 97, 255, 0.2) !important;
+  transition: ease 0.3s all;
+}
+
+.requestFeature svg,
+.teamsActiveCard svg,
+.productCard svg {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.requestFeature.activeProductCard {
+  opacity: 1;
+}
+
+.activeCard svg path,
+.teamsActiveCard svg path,
+.activeProductCard svg path {
+  stroke: white;
+  transition: ease 0.3s all;
+}
+
+.defaulticon {
+  display: block;
+}
+.plus {
+  display: none;
+}
+
+.requestFeature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.25;
+  border: 1px solid rgb(140, 151, 172);
+  background-clip: padding-box;
+  border-radius: 16px;
+  flex-direction: column;
+  font-size: 10px;
+  text-align: center;
+}
+.requestFeature.activeCard {
+  opacity: 1;
+}
+.requestFeature:hover {
+  cursor: pointer;
+}
+
+.card:not(.activeCard):hover {
+  background-color: rgba(0, 216, 167, 0.1);
+  border: 2px solid rgba(0, 216, 167, 0.5);
+  color: #00d8a7 !important;
+  opacity: 1;
+}
+
+.card:not(.activeCard):hover > .defaulticon {
+  display: none !important;
+}
+.card:not(.activeCard):hover > .plus {
+  display: block !important;
+}
+
+.teamsCard.teamsActiveCard {
+  opacity: 1;
+}
+.teamsCard:not(.teamsActiveCard):hover {
+  color: #ffd166 !important;
+  opacity: 1;
+  background: rgba(255, 209, 102, 0.1);
+  border: 2px solid rgba(255, 209, 102, 0.5);
+}
+
+.teamsCard:not(.teamsActiveCard):hover > .defaulticon {
+  display: none !important;
+}
+.teamsCard:not(.teamsActiveCard):hover > .plus {
+  display: block !important;
+}
+
+.strategy:not(.activeProductCard):hover {
+  color: #7b61ff !important;
+  opacity: 1;
+  background: rgba(123, 97, 255, 0.1);
+  border: 2px solid rgba(123, 97, 255, 0.5);
+}
+
+.strategy:not(.activeProductCard):hover > .defaulticon {
+  display: none !important;
+}
+.strategy:not(.activeProductCard):hover > .plus {
+  display: block !important;
+}
+
+.roadContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 370px);
+  background-image: url(../../assets/media/animationObject/mile.svg);
+  background-position: center;
+  background-repeat: repeat-y;
+  z-index: -1;
+  position: absolute;
+}
+
+.producterGroup {
+  position: absolute;
+  bottom: 217px;
+  left: calc(50% - 80px);
+}
+
+.logo {
+  width: 86px;
+  height: 86px;
+  position: absolute;
+  left: 23%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  animation: logo infinite 7s;
+  z-index: 999;
+}
+
+.logo img {
+  width: 86px;
+  height: 86px;
+  z-index: 9999;
+}
+
+.feedTooltipAnimation img {
+  width: 163px;
+  height: 64px;
+  transform: rotate(270deg);
+}
+
+.allTeamsTooltipAnimation img {
+  width: 163px;
+  height: 64px;
+  transform: rotate(270deg);
+}
+
+.roadMapTooltipAnimation img {
+  width: 163px;
+  height: 64px;
+  transform: rotate(270deg);
+}
+
+.feedTooltipAnimation {
+  left: 50%;
+  transform: translate(0, -75%);
+  position: absolute;
+  offset-path: path("M0.5 120.5V1190");
+  animation: feed infinite 7s linear;
+}
+
+.allTeamsTooltipAnimation {
+  left: 50%;
+  top: 25%;
+  transform: translate(0, -75%);
+  position: absolute;
+  offset-path: path("M0.5 120.5V935");
+  animation: team infinite 7s linear;
+}
+
+.roadMapTooltipAnimation {
+  left: 50%;
+  top: 55%;
+  transform: translate(0, -75%);
+  position: absolute;
+  offset-path: path("M0.5 120.5V500");
+  animation: roadMap infinite 7s linear;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    overflow: hidden !important;
+  }
+}
+
+@keyframes feed {
+  0% {
+    offset-distance: 0%;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes team {
+  0% {
+    offset-distance: 0%;
+  }
+  35% {
+    offset-distance: 0%;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes roadMap {
+  0% {
+    offset-distance: 0%;
+  }
+  60% {
+    offset-distance: 0%;
+  }
+  75% {
+    offset-distance: 50%;
+  }
+  90% {
+    offset-distance: 95%;
+    opacity: 0.8;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.roadMapContainer {
+  position: absolute;
+  background: url(../../assets/media/animationObject/emailRoad.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200%;
+  height: 48px;
+  top: 50%;
+  z-index: -1;
+  transform: translate(50%, -40%);
+  right: -70px;
+}
+
+.roadMapContainer img {
+  width: 85px;
+  height: 112px;
+  position: absolute;
+  top: -115%;
+  right: 0;
+  opacity: 0;
+  animation: email infinite 7s linear;
+}
+
+@keyframes email {
+  0% {
+    transform: translateX(-260px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+}
+
+.productIconList {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sonarWave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  box-shadow: 0px 0px 2px rgba(64, 81, 117, 0.25);
+  border: 0.5px dashed rgba(140, 151, 172, 0.1);
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sonarWave1 {
+  animation: sonarWave 7s linear infinite;
+}
+
+.sonarWave2 {
+  animation: sonarWave2 7s linear infinite;
+}
+
+.sonarWave3 {
+  animation: sonarWave3 7s linear infinite;
+}
+
+.sonarWave4 {
+  animation: sonarWave4 7s linear infinite;
+}
+
+@keyframes sonarWave {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0.3);
+    opacity: 0.1;
+    background-color: HSL(221, 29%, 35%, 0.1);
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0.2;
+  }
+}
+
+@keyframes sonarWave2 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0.4);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(2);
+    background-color: HSL(221, 29%, 35%, 0.2);
+  }
+}
+
+@keyframes sonarWave3 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0.7);
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(2.5);
+    background-color: HSL(221, 29%, 35%, 0.25);
+  }
+}
+
+@keyframes sonarWave4 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(3);
+    background-color: HSL(221, 29%, 35%, 0.4);
+  }
+}
+.border1 {
+  position: absolute;
+  top: -29px;
+  left: calc(-25% + 8px);
+  width: 214px;
+  height: 214px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(64, 81, 117, 0.25);
+  z-index: -1;
+}
+
+.border2 {
+  position: absolute;
+  top: -66px;
+  left: calc(25% - 99px);
+  width: 278px;
+  height: 278px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(64, 81, 117, 0.25);
+  z-index: -1;
+}
+
+.border3 {
+  position: absolute;
+  top: -98px;
+  left: calc(25% - 131px);
+  width: 342px;
+  height: 342px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='50%' ry='50%' stroke='%238C97AC1A' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 100px;
+  z-index: 2;
+}

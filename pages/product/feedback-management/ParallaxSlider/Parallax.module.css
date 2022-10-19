@@ -1,0 +1,164 @@
+.container {
+  position: relative;
+  color: #8c97ac;
+  margin: auto;
+  padding-top: 596px;
+  padding-bottom: 170px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.cardList {
+  width: 1200px;
+  position: relative;
+}
+/* Cellection */
+
+.productFeaturesSection {
+  width: 400px;
+}
+
+.header {
+  display: flex;
+}
+
+.blueBgColor {
+  background-color: #2d70fd !important;
+}
+
+.orangeBgColor {
+  background-color: #ff9c54 !important;
+}
+
+.greenBgColor {
+  background-color: #00d8a7 !important;
+}
+
+.yellowBgColor {
+  background-color: #ffd166 !important;
+}
+
+.blueColor {
+  color: #2d70fd !important;
+}
+
+.orangeColor {
+  color: #ff9c54 !important;
+}
+
+.greenColor {
+  color: #00d8a7 !important;
+}
+
+.yellowColor {
+  color: #ffd166 !important;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.005em;
+  color: #8c97ac;
+  margin-bottom: 24px;
+}
+
+.quesTextContainer {
+  width: 352px;
+  height: 180px;
+  margin-bottom: 24px;
+}
+
+.quesTextContainer > span {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  width: 352px;
+  height: 96px;
+  margin-bottom: 24px;
+}
+
+.description > p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  color: #405175;
+  opacity: 0.8;
+}
+
+.images {
+  width: 800px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.image {
+  width: 800px;
+  height: 450px;
+}
+
+.showImage {
+  position: fixed;
+  top: 100px;
+}
+
+.active {
+  position: relative !important;
+  transform: translate3d(400px, 0px, 0px);
+}
+
+.showImageCenter {
+  position: absolute;
+  bottom: 50px;
+}
+.productFeaturesContent {
+  width: 390px;
+  padding-right: 48px;
+}
+
+.itemContentMobileImage {
+  margin-top: 34px;
+}
+
+.productFeaturesItem {
+  padding: 120px 0 42px;
+  margin-bottom: 54px;
+}
+
+.productFeaturesItem:first-child{
+    padding-top: 47px;
+}
+
+.productFeaturesItem:nth-child(4){
+    margin-bottom: 0px;
+}
+
+.productFeaturesItem header .titleWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.productFeaturesItem header .icoWrap {
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
+}

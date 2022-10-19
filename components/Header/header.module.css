@@ -1,0 +1,487 @@
+
+.container {
+  width: 100%;
+  background: url(../../assets/media/banner/HomeBackground.png),
+    radial-gradient(50% 50% at 50% 50%, #2d70fd 0%, #001747 100%);
+  background-position: inherit;
+  background-size: inherit;
+  background-repeat: repeat;
+  padding: 0px 120px 78px 120px;
+  color: #fff;
+  position: relative;
+  z-index: 99;
+}
+.logoContainer{
+  width: 178px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 24px 32px 24px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  .container {
+    padding: 0 !important;
+  }
+}
+
+.start_button {
+  width: 83px;
+  height: 36px;
+  background-color: var(--text-green);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--text-white);
+  border: solid 1px #00d8a7;
+  line-height: 17px;
+  transition: linear 0.2s all;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start_button:hover {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgb(0 164 126 / 65%);
+  transition: linear 0.2s all;
+}
+
+.start_button:focus {
+  outline: none;
+}
+
+.signIn_button {
+  width: 109px;
+  height: 36px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--text-white);
+  border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.signIn_button:hover {
+  opacity: 1;
+}
+
+.userSignContainer {
+  display: flex;
+}
+
+.subMenuContainer {
+  width: 100%;
+  position: absolute;
+  left: 6.7vmin;
+  top: 67px;
+  border-radius: 16px;
+}
+
+.menuContent {
+  border-radius: 16px;
+  position: relative;
+  z-index: 10;
+  background: #001746;
+  box-shadow: 0 0 0 2px #77777720;
+}
+
+.tabListContainer {
+  width: 262px;
+  height: 64px;
+  border-radius: 12px;
+  background: #ffffff10;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff10;
+  transition: ease 0.3s all;
+}
+
+.tabListContainer:last-child {
+  margin-bottom: 0;
+}
+
+.tabListContainer:hover {
+  cursor: pointer;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+  padding: 8px;
+  background: #ffffff20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease 0.3s all;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.content {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: ease 0.3s all;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  transition: ease 0.3s all;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 14px;
+  color: #fff;
+  transition: ease 0.3s all;
+  letter-spacing: 0.01em;
+}
+
+/* Chat Tabs  */
+
+.tabListContainer.chat:hover {
+  background: rgba(0, 216, 167, 0.1);
+  border: 1px solid rgba(0, 216, 167, 0.5);
+  transition: ease 0.3s all;
+}
+.tabListContainer.chat:hover .title,
+.tabListContainer.chat:hover .description {
+  color: #00d8a7;
+  transition: ease 0.3s all;
+}
+.tabListContainer.chat:hover svg path {
+  stroke: #00d8a7;
+  transition: ease 0.3s all;
+}
+.tabListContainer.chat:hover .icon {
+  background: #00d8a720;
+  transition: ease 0.3s all;
+}
+
+/* RoadMap Tabs */
+
+.tabListContainer.task:hover {
+  background: rgba(255, 209, 102, 0.1);
+  border: 1px solid rgba(255, 209, 102, 0.5);
+  transition: ease 0.3s all;
+}
+.tabListContainer.task:hover .title,
+.tabListContainer.task:hover .description {
+  color: #ffd166;
+  transition: ease 0.3s all;
+}
+.tabListContainer.task:hover svg path {
+  stroke: #ffd166;
+  transition: ease 0.3s all;
+}
+.tabListContainer.task:hover .icon {
+  background: #ffd16620;
+  transition: ease 0.3s all;
+}
+
+/* RoadMap Tabs */
+
+.tabListContainer.roadmap:hover {
+  background: rgba(123, 97, 255, 0.1);
+  border: 1px solid rgba(123, 97, 255, 0.5);
+  transition: ease 0.3s all;
+}
+.tabListContainer.roadmap:hover .title,
+.tabListContainer.roadmap:hover .description {
+  color: #7b61ff;
+  transition: ease 0.3s all;
+}
+.tabListContainer.roadmap:hover svg path {
+  stroke: #7b61ff;
+  transition: ease 0.3s all;
+}
+.tabListContainer.roadmap:hover .icon {
+  background: #7b61ff20;
+  transition: ease 0.3s all;
+}
+
+/* ChangeLog Tabs */
+
+.tabListContainer.changelog:hover {
+  background: rgba(45, 112, 253, 0.1);
+
+  border: 1px solid rgba(45, 112, 253, 0.5);
+  transition: ease 0.3s all;
+}
+.tabListContainer.changelog:hover .title,
+.tabListContainer.changelog:hover .description {
+  color: #2d70fd;
+  transition: ease 0.3s all;
+}
+.tabListContainer.changelog:hover svg path {
+  stroke: #2d70fd;
+  transition: ease 0.3s all;
+}
+.tabListContainer.changelog:hover .icon {
+  background: #2d70fd20;
+  transition: ease 0.3s all;
+}
+
+/* Documentation Tabs */
+
+.tabListContainer.documentation:hover {
+  background: rgba(0, 212, 201, 0.1);
+  border: 1px solid rgba(0, 212, 201, 0.5);
+  transition: ease 0.3s all;
+}
+.tabListContainer.documentation:hover .title,
+.tabListContainer.documentation:hover .description {
+  color: #00d4c9;
+  transition: ease 0.3s all;
+}
+.tabListContainer.documentation:hover svg path {
+  stroke: #00d4c9;
+  transition: ease 0.3s all;
+}
+.tabListContainer.documentation:hover .icon {
+  background: #00d4c920;
+  transition: ease 0.3s all;
+}
+
+/* Integrations Tabs */
+
+.tabListContainer.integrations:hover {
+  background: rgba(255, 155, 84, 0.1);
+  border: 1px solid rgba(255, 155, 84, 0.5);
+  transition: ease 0.3s all;
+}
+.tabListContainer.integrations:hover .title,
+.tabListContainer.integrations:hover .description {
+  color: #ff9c54;
+  transition: ease 0.3s all;
+}
+.tabListContainer.integrations:hover svg path {
+  stroke: #ff9c54;
+  transition: ease 0.3s all;
+}
+.tabListContainer.integrations:hover .icon {
+  background: #ff9c5420;
+  transition: ease 0.3s all;
+}
+
+.tabsVideoContainer {
+  border-radius: 16px;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+  width: 302px;
+  max-width: 100%;
+  height: 170px;
+}
+
+.tabsVideoContainer > div {
+  background: url(../../assets/media/banner/VideoBanner.png) no-repeat center
+    center;
+  width: 100%;
+  height: 100%;
+}
+
+.tabsItemContent {
+  margin: 20px 0;
+}
+
+.tabsItemTitle {
+  color: #2d70fd;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.tabsItemDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 17px;
+  letter-spacing: 0.005em;
+  color: #ffffff75;
+}
+
+.footerBlueButton {
+  width: 102px;
+  height: 41px;
+  background: #2d70fd;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: #fff;
+  border: solid 1px #2d70fd;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: linear 0.2s all;
+  text-decoration: none;
+}
+
+.footerBlueButton:hover {
+  background: #2851a7;
+  border: solid 1px #2851a7;
+  transition: linear 0.2s all;
+}
+
+.tabsContentContainer {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: none;
+}
+
+.active {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: block;
+}
+
+.footerBlueButton:focus,
+.footerBookButton:focus {
+  outline: none;
+}
+
+.footerBookButton {
+  background: none;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  width: 128px;
+  line-height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  height: 41px;
+  transition: linear 0.2s all;
+}
+
+.footerBookButton:hover {
+  transition: linear 0.2s all;
+  color: #98afe2 !important;
+}
+
+.footerBookButton:hover svg path {
+  stroke: #98afe2;
+  transition: linear 0.2s all;
+}
+
+.tabsItemFooter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.playPauseButton {
+  width: 66px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url(../../assets/media/banner/playButton.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  border: none;
+  transition: linear 0.1s all;
+}
+
+.playPauseButton:hover {
+  opacity: 0.7;
+  transition: linear 0.1s all;
+}
+
+.playPauseButton:focus {
+  outline: none;
+}
+
+.mobileMenuHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.mobileMenuContent {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.016) 100%
+  );
+  background-repeat: repeat-x;
+  background-size: contain;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  padding: 8px 24px;
+}
+
+.menuText {
+  color: #ffffff60;
+  border-bottom: solid 1px #ffffff20;
+}
+
+.menuText li {
+  padding: 12px 7px;
+}
+
+.singleText > a {
+  outline: none;
+  color: #ffffff60;
+}
+
+.menuText li:first-child {
+  padding-top: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .userSignContainer {
+    flex-direction: column !important;
+  }
+
+  .userSignContainer button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subMenuContainer,
+  .userSignContainer {
+    display: none !important;
+  }
+}

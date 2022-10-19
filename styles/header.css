@@ -1,0 +1,236 @@
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 9H14H20M4 15H20' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") !important;
+}
+
+.navbar-toggler:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-collapse {
+  flex-grow: inherit !important;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  padding: 0 !important;
+  z-index: 10;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.navbar .navbar-nav {
+  margin: auto;
+  width: 660px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0 !important;
+}
+
+.navbar .navbar-collapse {
+  width: 100%;
+  margin: 0px;
+}
+
+.navbar .nav-item {
+  position: relative;
+  opacity: 0.6;
+  padding: 0 24px;
+  transition: linear 0.2s all;
+}
+
+.navbar .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 0 !important;
+  line-height: 17px;
+}
+
+.navbar .nav-item:hover {
+  opacity: 1;
+  transition: linear 0.2s all;
+}
+
+.navbar .nav-item.active {
+  opacity: 1;
+}
+
+.navbar .nav-item.active::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.grid {
+  border: 1px solid #ccc;
+  border-width: 1px 0 0 1px;
+}
+
+.grid div {
+  border: 1px solid #ccc;
+  border-width: 0 1px 1px 0;
+  float: left;
+}
+
+.video-react {
+  border-radius: 16px !important;
+}
+
+.mobileHeaderSubMenuContainer {
+  display: none;
+}
+
+.dropdown-toggle::after {
+  transform: rotateX(180deg) !important;
+  background: url("../assets/media/icons/buttomLight.svg") no-repeat center
+    right !important;
+  width: 13px !important;
+  height: 12px !important;
+  border: none !important;
+  display: block !important;
+  top: 1.6em !important;
+  margin: 0 !important;
+  position: absolute !important;
+  right: 7px !important;
+  transition: ease 0.4s all !important;
+  opacity: 1 !important;
+}
+
+.collapsed.dropdown-toggle::after {
+  background: url("../assets/media/icons/buttomLight.svg") no-repeat center
+    right !important;
+  width: 13px !important;
+  height: 12px !important;
+  border: none !important;
+  transform: rotateX(0deg) !important;
+  display: block !important;
+  top: 1.6em !important;
+  margin: 0 !important;
+  position: absolute !important;
+  right: 7px !important;
+  transition: ease 0.4s all !important;
+  opacity: 0.6 !important;
+}
+
+.dropdown-toggle.collapsed {
+  color: #ffffff60 !important;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.dropdown-toggle {
+  color: #ffffff60;
+}
+
+.subMenuList {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.subMenuList li {
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  padding: 24px 0;
+  padding-left: 7px;
+}
+
+.subMenuList li a {
+  text-decoration: none;
+}
+
+.list-unstyled li a {
+  color: #ffffff60;
+  font-size: 16px;
+}
+
+.list-unstyled li img {
+  margin-right: 12px;
+  opacity: 0.6;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-light .navbar-toggler:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.activeSubDot {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.mobileMenuDots{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.divider-horizantal-container {
+  z-index: -1;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+.divider-horizantal {
+  z-index: 0;
+  width: 100vw;
+  border-top: 1px solid #e6e9ee;
+  opacity: 0.1;
+  padding: 29.5px 0px;
+}
+
+.divider-vertical-container {
+  z-index: -1;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  display: flex;
+  left: 0px;
+  height: calc(100% - 90px);
+}
+
+.divider-vertical {
+  z-index: -1;
+  height: 100%;
+  border-right: 1px solid #e6e9ee;
+  padding: 0px 29.5px;
+  opacity: 0.1;
+}
+
+@media only screen and (max-width: 768px) {
+  .divider-horizantal-container,
+  .divider-vertical-container {
+    top: 90px;
+  }
+}

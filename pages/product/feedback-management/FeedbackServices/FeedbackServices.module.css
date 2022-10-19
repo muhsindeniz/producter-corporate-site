@@ -1,0 +1,205 @@
+.container {
+  padding: 144px 120px 260px 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 1200px;
+}
+
+.serviceItem {
+  list-style-type: none;
+  background-image: url(../../../../assets/media/product/feedback-management/services-card-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  padding: 58px 38px;
+  border-radius: 24px;
+  display: flex;
+  width: 160px;
+  height: 200px;
+  transition: width 0.5s ease-out, opacity 0.5s ease-out;
+  overflow: hidden;
+}
+
+.serviceItem:last-child {
+  margin-right: 0px;
+}
+
+.contentContainer {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+}
+
+.serviceItem svg {
+  width: 84px;
+  height: 84px;
+}
+
+.serviceItem:hover {
+  cursor: pointer;
+}
+
+.descTitle {
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
+}
+
+.title {
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.small {
+  width: 48px !important;
+}
+
+.serviceItem:nth-child(1) {
+  background-color: #2d70fd;
+}
+
+.serviceItem:nth-child(2) {
+  background-color: #00d8a7;
+}
+
+.serviceItem:nth-child(3) {
+  background-color: #ffd166;
+}
+
+.serviceItem:nth-child(4) {
+  background-color: #ff9c54;
+}
+
+.serviceItem:nth-child(5) {
+  background-color: #40e0d2;
+}
+
+.serviceItem:nth-child(6) {
+  background-color: #7b61ff;
+}
+
+.serviceItem:nth-child(1):hover .contentContainer,
+.serviceItem:nth-child(2):hover .contentContainer,
+.serviceItem:nth-child(3):hover .contentContainer,
+.serviceItem:nth-child(4):hover .contentContainer,
+.serviceItem:nth-child(5):hover .contentContainer,
+.serviceItem:nth-child(6):hover .contentContainer {
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon svg {
+  transition: all 0.5s ease-out;
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    padding: 54px 48px 150px 48px !important;
+  }
+
+  .content {
+    flex-direction: column !important;
+  }
+
+  .serviceContainer {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .serviceItem {
+    width: 294px !important;
+    height: 64px !important;
+    padding: 0 !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    transition: all 0.5s ease-out !important;
+    text-align: center !important;
+  }
+
+  .icon svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .serviceContainer {
+    gap: 32px !important;
+  }
+
+  .serviceItem:nth-child(1):hover,
+  .serviceItem:nth-child(2):hover,
+  .serviceItem:nth-child(3):hover,
+  .serviceItem:nth-child(4):hover,
+  .serviceItem:nth-child(5):hover,
+  .serviceItem:nth-child(6):hover {
+    width: 294px !important;
+    height: 252px !important;
+    display: flex !important;
+  }
+
+  .serviceItem:nth-child(1):hover .icon svg,
+  .serviceItem:nth-child(2):hover .icon svg,
+  .serviceItem:nth-child(3):hover .icon svg,
+  .serviceItem:nth-child(4):hover .icon svg,
+  .serviceItem:nth-child(5):hover .icon svg,
+  .serviceItem:nth-child(6):hover .icon svg {
+    width: 72px !important;
+    height: 72px !important;
+    transition: height 0.5s ease-out !important;
+  }
+
+  .contentContainer {
+    display: none !important;
+    transition: all 0.5s ease-out !important;
+  }
+
+  .serviceItem:nth-child(1):hover .contentContainer,
+  .serviceItem:nth-child(2):hover .contentContainer,
+  .serviceItem:nth-child(3):hover .contentContainer,
+  .serviceItem:nth-child(4):hover .contentContainer,
+  .serviceItem:nth-child(5):hover .contentContainer,
+  .serviceItem:nth-child(6):hover .contentContainer {
+    display: flex !important;
+  }
+
+  .descTitle {
+    margin-top: 24px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .title {
+    margin-top: 4px !important;
+    font-weight: 700 !important;
+    font-size: 35px !important;
+    line-height: 52px !important;
+  }
+
+
+}

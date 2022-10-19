@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0px;
+}
+
+.banner {
+  width: 1078px;
+  height: 764px;
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    padding: 96px 24px !important;
+  }
+
+  .banner {
+    height: 457px;
+    object-fit: contain;
+  }
+}

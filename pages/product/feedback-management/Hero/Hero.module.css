@@ -1,0 +1,424 @@
+.managementContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 81px;
+  position: relative;
+  z-index: 1;
+  max-height: 1900px;
+}
+
+.managementToolTopTitle {
+  font-size: 18px !important;
+  font-weight: 300;
+
+  text-transform: uppercase;
+  line-height: 22px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px !important;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  font-style: normal;
+  margin-bottom: 20px;
+  min-height: 136px;
+}
+
+.subDescription {
+  font-size: 20px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  opacity: 0.8;
+  margin-bottom: 29px;
+}
+
+.joinContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinContainer > form {
+  width: 100%;
+}
+
+.joinInput {
+  width: 285px;
+  height: 58px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  margin-right: 12px;
+  padding: 0px 24px;
+  color: #ffffff;
+}
+
+.joinInput::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.joinInput:focus-visible {
+  opacity: 1;
+}
+
+.joinButtonContainer {
+  position: relative;
+  width: 444px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.springText {
+  text-decoration: none;
+}
+
+.joinArrowSpring {
+  position: absolute;
+  right: -20px;
+  top: -5px;
+  cursor: pointer;
+}
+
+.joinArrowSpring > a > span {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  opacity: 0.65;
+  color: #ffffff;
+  position: absolute;
+  white-space: nowrap;
+  top: 25px;
+  right: -81px;
+}
+
+.joinArrowSpring:hover span {
+  opacity: 1;
+}
+
+.joinArrowSpring:hover svg > g {
+  opacity: 1;
+}
+
+.joinButton {
+  width: 240px;
+  height: 57px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 62px;
+  line-height: 22px;
+  font-weight: 500, "Medium";
+  transition: linear 0.3s all;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinButton:hover {
+  background: #fff;
+  color: #2d70fd !important;
+  transition: linear 0.3s all;
+}
+
+.joinButtonMobile {
+  display: none;
+  width: 85px;
+  height: 57px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 62px;
+  line-height: 21.78px;
+  font-weight: 500, "Medium";
+  transition: linear 0.3s all;
+}
+
+.joinButtonMobile:hover {
+  background: #fff;
+  color: #2d70fd;
+  transition: linear 0.3s all;
+}
+
+.bannerContainer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 660px;
+  background: #ffffff;
+  border: 4px solid #e1edff;
+  border-radius: 16px;
+  padding: 48px 48px 48px 24px;
+  max-width: 1200px;
+}
+
+.moduleName {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  color: #2d70fd;
+  margin-bottom: 16px;
+}
+
+.moduleDesc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: #405175;
+  opacity: 0.8;
+  margin-bottom: 48px;
+}
+
+.feedbackContainer {
+  width: 100%;
+  margin-right: 24px;
+  display: flex;
+  justify-content: center;
+  color: #405175;
+}
+
+.feedbackDescContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedTabsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.feedIcon img {
+  width: 32px;
+}
+
+.feedbackDesc {
+  width: 404px;
+  height: 130px;
+  border-radius: 16px;
+  padding: 24px 24px 19px 24px;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.feedbackDesc.active {
+  background: rgba(45, 112, 253, 0.03);
+}
+
+.feedbackDesc:hover {
+  cursor: pointer;
+}
+
+.feedContent {
+  padding-left: 12px;
+}
+
+.feedTitle {
+  color: #405175;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.feedTitle.active {
+  color: #2d70fd;
+}
+
+.feedDescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: #8c97ac;
+}
+
+.feedbackImageContainer {
+  height: 100%;
+}
+
+.feedbackImageContainer > img {
+  width: 700px;
+  height: 437px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .joinButtonContainer {
+    width: auto;
+  }
+  .joinArrowSpring {
+    display: none;
+  }
+
+  .feedIcon img {
+    width: 24px;
+  }
+
+  .bannerContainer {
+    padding: 24px !important;
+  }
+
+  .feedbackContainer {
+    flex-direction: column-reverse;
+  }
+
+  .feedbackImageContainer > img {
+    width: 100%;
+  }
+
+  .feedTabsContainer {
+    margin-right: 0;
+    margin-top: 24px;
+  }
+
+  .bannerContainer {
+    height: auto;
+  }
+
+  .feedbackDesc {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 28px;
+    height: auto;
+  }
+
+  .feedTitle {
+    font-size: 18px;
+  }
+
+  .feedDescription {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .managementToolTopTitle {
+    font-size: 14px !important;
+    margin-bottom: 14px;
+  }
+
+  .feedContent {
+    padding-left: 8px;
+  }
+
+  .feedbackContainer {
+    flex-direction: column-reverse;
+  }
+
+  .feedbackImageContainer > img {
+    width: 100%;
+    height: 183px;
+  }
+
+  .title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 16px;
+    min-height: auto;
+  }
+
+  .subDescription {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 21px;
+  }
+
+  .roadMapContainer {
+    height: 620px;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .teamCompanyContainer {
+    margin-top: 32px !important;
+    overflow: auto !important;
+    height: 165px !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+  }
+
+  .teamAroundContent {
+    margin: 0 !important;
+  }
+
+  .teamAroundContainer h4 {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .teamAroundContainer {
+    margin-top: 70px !important;
+  }
+
+  .teamCompanyItem {
+    margin-right: 24px !important;
+    padding: 15px !important;
+    width: 150px !important;
+    height: 120px !important;
+  }
+
+  .managementContainer {
+    margin-top: 81px !important;
+  }
+
+  .joinInput {
+    max-width: 249px;
+    width: auto;
+    height: 57px;
+    outline-color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1380px) {
+  .feedbackImageContainer > img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .feedbackDesc {
+    width: 100% !important;
+    padding: 12px !important;
+    height: max-content !important;
+  }
+
+  .bannerContainer {
+    padding: 12px !important;
+  }
+
+  .feedTitle {
+    font-size: 14px !important;
+  }
+
+  .feedDescription {
+    font-size: 12px !important;
+  }
+}

@@ -1,0 +1,88 @@
+.TabBarNav {
+  height: 500px !important;
+}
+
+.container {
+  display: none;
+  padding: 72px 120px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: #405175;
+  opacity: 0.8;
+  border-bottom: 1px solid rgb(140, 151, 172, 0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 120px 33px 120px;
+  border-bottom: 1px solid rgb(140, 151, 172, 0.1);
+}
+
+.navbarItem {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8c97ac;
+  opacity: 0.6;
+  margin-right: 48px;
+  position: relative;
+}
+
+.navbarItem.active {
+  color: #405175;
+  font-weight: 500;
+  opacity: 1;
+}
+.navbarItem.active::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #405175;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 14px);
+}
+
+.navTabContainer {
+  width: 100%;
+}
+.activeTabContainer {
+  display: block;
+}
+
+.links {
+  text-decoration: none;
+  color: #8c97ac;
+}
+.links:hover {
+  color: #1d2637 !important;
+}
+@media only screen and (max-width: 768px) {
+    .navbar{
+        white-space: nowrap;
+        padding-left: 20px;
+        overflow: scroll;
+    }
+  .container {
+    padding: 40px 20px !important;
+  }
+
+  .navTabContainer nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .navTabContainer nav .nav-item .nav-link {
+    white-space: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+  }
+}

@@ -1,0 +1,119 @@
+.container {
+    width: 100%;
+    padding: 0 120px 200px 120px;
+}
+
+.cardContainer {
+    background: rgba(45, 112, 253, 0.05);
+    box-shadow: 0px 1px 7px rgba(45, 112, 253, 0.25);
+    border-radius: 24px;
+    width: 100%;
+    padding: 44px 48px 48px 48px;
+}
+
+.title {
+    
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    color: #2D70FD;
+    margin-bottom: 16px;
+}
+
+.description {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #2D70FD;
+    opacity: 0.8;
+}
+
+.feedbackPanelTabsContainer {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(45, 112, 253, 0.15);
+    border-radius: 100px;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+}
+
+.tabContainer {
+    height: 100%;
+    width: 100%;
+    min-height: 130px;
+    display: flex;
+    align-items: end;
+}
+
+.tabPane {
+    list-style-type: none;
+    white-space: nowrap;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.09vw;
+    line-height: 19px;
+    color: #2D70FD;
+    opacity: 0.75;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.tabPane.active {
+    opacity: 1;
+    font-weight: 500;
+    padding: 16px;
+    box-shadow: inset -1px -1px 5px #CDDEFF;
+    border-radius: 200px;
+}
+
+.banner {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.bannerTop{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        padding: 0 16px 96px 16px !important;
+    }
+
+    .cardContainer {
+        padding: 16px !important;
+    }
+
+    .title {
+        font-weight: 600 !important;
+        font-size: 24px !important;
+        line-height: 32px !important;
+    }
+
+    .description {
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 28px !important;
+    }
+
+    .tabContainer {
+        min-height: auto !important;
+    }
+
+    .tabPane {
+        font-size: 16px !important;
+        line-height: 19px !important;
+        padding: 12px !important;
+    }
+
+    .tabPane.active {}
+
+    .banner {}
+}

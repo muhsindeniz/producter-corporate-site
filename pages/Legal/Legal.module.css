@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  background: url(../../assets/media/banner/HomeBackground.png),
+    radial-gradient(50% 50% at 50% 50%, #2d70fd 0%, #001747 100%);
+  background-position: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 120px 78px 120px;
+  color: #fff;
+  position: relative;
+  z-index: 99;
+}
+
+.mouseScroll {
+  margin-top: 70px;
+}
+.mouseScroll:hover {
+  cursor: pointer;
+}
+.cards {
+  margin-top: -8px;
+}
+
+.start_button {
+  width: 119px;
+  height: 36px;
+  background-color: var(--text-green);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600, "Semi Bold";
+  font-style: normal;
+  color: var(--text-white);
+  border: solid 1px #00d8a7;
+}
+
+.start_button:focus {
+  outline: none;
+}
+
+.signIn_button {
+  width: 119px;
+  height: 36px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600, "Semi Bold";
+  font-style: normal;
+  color: var(--text-white);
+  border: none;
+}
+
+.signIn_button:focus {
+  outline: none;
+}
+
+.userSignContainer {
+  display: flex;
+}
+
+@media only screen and (max-width: 1024px) {
+  
+  .container{
+    padding: 0px;
+  }
+  .title{
+    font-size: 36px !important;
+  }
+  .subDescription{
+    font-size: 18px !important;
+    line-height: 20;
+    padding: 0px 20px;
+  }
+
+  }
+  .userSignContainer {
+    flex-direction: column !important;
+  }
+
+.managementContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.managementToolTopTitle {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  line-height: 21px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.title {
+  line-height: 67px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subDescription {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.joinButton {
+  width: 240px;
+  height: 57px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 62px;
+}

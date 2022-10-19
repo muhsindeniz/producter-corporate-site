@@ -1,0 +1,239 @@
+.container {
+  width: 100%;
+  min-height: 1012px;
+  max-width: 1264px;
+  padding-top: 134px;
+  padding-bottom: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 24px;
+  width: 584px;
+  height: 200px;
+  padding: 24px 22px 22px 30px;
+  margin: 16px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.cardDetail {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.cardHeader {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  color: rgba(21, 20, 57, 0.4);
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  color: #001747;
+  margin-bottom: 6px;
+  transition: all 0.2s;
+}
+
+.cardImage img {
+  width: 150px;
+  height: 152px;
+}
+
+/* resources efffects */
+
+.arrowIcon {
+  margin-left: 8px;
+  opacity: 0;
+  margin-top: 6px;
+  transition: ease 0.5s all;
+}
+.resources {
+  border: 2px solid rgb(140, 151, 172, 0.15);
+  transition: all 0.5s;
+  text-decoration: none !important;
+}
+.resources:hover {
+  border: 2px solid #2d70fd;
+  box-sizing: border-box;
+}
+.resources:hover .cardTitle {
+  color: #2d70fd;
+}
+
+.resources:hover .arrowIcon {
+  opacity: 1;
+  transition: ease 0.5s all;
+}
+
+/* blog efffects */
+.blog {
+  border: 2px solid rgb(140, 151, 172, 0.15);
+  transition: ease 0.5s all;
+  text-decoration: none !important;
+}
+
+.blog:hover {
+  border: 2px solid #00d8a7;
+  box-sizing: border-box;
+}
+.blog:hover .cardTitle {
+  color: #00d8a7;
+}
+
+.blog:hover .arrowIcon {
+  opacity: 1;
+  margin-top: 7px;
+  transition: ease 0.5s all;
+}
+
+/* changelog efffects */
+.changelog {
+  border: 2px solid rgb(140, 151, 172, 0.15);
+  transition: all 0.5s;
+  text-decoration: none !important;
+}
+
+.changelog:hover {
+  border: 2px solid #ffd166;
+  box-sizing: border-box;
+}
+.changelog:hover .cardTitle {
+  color: #ffd166;
+}
+
+.changelog:hover .arrowIcon {
+  opacity: 1;
+  margin-top: 7px;
+  transition: ease 0.5s all;
+}
+/* glossary efffects */
+.glossary {
+  border: 2px solid rgb(140, 151, 172, 0.15);
+  transition: all 0.5s;
+  text-decoration: none !important;
+}
+.glossary:hover {
+  border: 2px solid #ff9c54;
+  box-sizing: border-box;
+}
+.glossary:hover .cardTitle {
+  color: #ff9c54;
+}
+.glossary:hover .arrowIcon {
+  opacity: 1;
+  margin-top: 6px;
+  transition: ease 0.5s all;
+}
+
+/* community efffects */
+.community {
+  border: 2px solid rgb(140, 151, 172, 0.15);
+  transition: all 0.5s;
+  text-decoration: none !important;
+}
+.community:hover {
+  border: 2px solid #40e0d2;
+  box-sizing: border-box;
+}
+.community:hover .cardTitle {
+  color: #40e0d2;
+}
+
+.community:hover .arrowIcon {
+  opacity: 1;
+  margin-top: 6px;
+  transition: ease 0.5s all;
+}
+/* videos efffects */
+.videos {
+  border: 2px solid rgb(140, 151, 172, 0.15);
+  transition: all 0.5s;
+  text-decoration: none !important;
+}
+.videos:hover {
+  border: 2px solid #7b61ff;
+  box-sizing: border-box;
+}
+.videos:hover .cardTitle {
+  color: #7b61ff;
+}
+.videos:hover .arrowIcon {
+  opacity: 1;
+  margin-top: 5px;
+  transition: ease 0.5s all;
+}
+
+.paginationContainer {
+  margin-top: 8px;
+}
+.pagination {
+  background: #8c97ac;
+  opacity: 0.1;
+  width: 25px;
+  height: 8px;
+  border-radius: 24px;
+  margin: 0px 5px;
+}
+.activePagination {
+  opacity: 0.25;
+  width: 75px;
+}
+
+.swiperStart {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .swiperStart {
+    display: block;
+  }
+  .container {
+    padding: 56px 24px 144px 24px !important;
+    min-height: 690px !important;
+  }
+
+  .card {
+    width: 100% !important;
+    height: 144px !important;
+    padding: 24px 22px 22px 24px !important;
+    margin: 8px 0 !important;
+  }
+
+  .cardImage img {
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  .cardHeader {
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
+
+  .cardTitle {
+    font-size: 28px !important;
+    line-height: 52px !important;
+  }
+
+  .arrowIcon {
+    display: none !important;
+  }
+}

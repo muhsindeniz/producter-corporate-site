@@ -1,0 +1,259 @@
+.container {
+  background-image: url(../../assets/media/signIn/login-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_container {
+  max-width: 1312px;
+  max-height: 772px;
+  width: calc(100% - 128px);
+  height: calc(100% - 128px);
+  border-radius: 24px;
+  border: 1px solid #f1f4f4;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  display: flex;
+  padding: 0px 0px 63px 0px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 23, 71, 0.03);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  padding: 200px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #001747;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #8c97ac;
+  margin-bottom: 24px;
+}
+
+.inputSection {
+  margin: 48px 0px;
+  width: auto;
+}
+.inputSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer {
+  width: 540px;
+  height: 72px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  /* text-align: right; */
+  padding-left: 24px;
+  padding-right: 255px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  color: #001747;
+}
+
+.inputContainer::placeholder {
+  color: #b1bacb;
+  font-weight: lighter;
+}
+
+.inputContainer:focus-visible {
+  outline-color: #2d70fd !important;
+}
+.afterContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  left: calc(50% + 14px);
+}
+
+.afterTitle {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 110%;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #001747;
+}
+
+.afterButton {
+  height: 40px;
+  width: 40px;
+  margin-left: 24px;
+  background: rgba(45, 112, 253, 0.05);
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.afterButton:hover {
+  background: #2d70fd;
+}
+
+.afterButton:hover > svg > path {
+  stroke: white;
+}
+.footerTitle {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #8c97ac;
+}
+
+.mailto {
+  cursor: pointer;
+  text-decoration: none;
+  color: #405175;
+  transition: all 0.3s ease;
+}
+.mailto:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    background-image: url(../../assets/media/signIn/mobile-login-bg.png);
+  }
+  .card_container {
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+    padding-bottom: 48px;
+  }
+
+  .section {
+    padding: 250px 24px 0px 24px;
+  }
+  .header {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .inputContainer {
+    max-width: 310px;
+    width: 100%;
+    height: 60px;
+    font-size: 13px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    padding-right: 185px;
+    padding-left: 20px;
+    color: #001747;
+  }
+  .afterContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    left: calc(50% - 29px);
+  }
+
+  .afterTitle {
+    font-size: 13px;
+    line-height: 110%;
+    text-align: right;
+    letter-spacing: 0.01em;
+    font-feature-settings: "liga" off;
+    color: #001747;
+  }
+
+  .afterButton {
+    height: 20px;
+    width: 20px;
+    margin-left: 18px;
+    background: none;
+  }
+  .afterButton:hover {
+    background: none;
+  }
+  .afterButton:hover > svg > path {
+    stroke: #2d70fd;
+  }
+
+  .afterButton > svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card_container {
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+    padding-bottom: 32px;
+  }
+
+  .inputContainer {
+    padding-right: 168px;
+  }
+  .section {
+    padding-top: 120px;
+  }
+  .header {
+    font-size: 26px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .afterButton {
+    margin-left: 8px;
+  }
+}

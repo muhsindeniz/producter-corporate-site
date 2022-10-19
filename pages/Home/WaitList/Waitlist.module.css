@@ -1,0 +1,353 @@
+.managementContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 81px;
+  position: relative;
+  z-index: 1;
+  max-height: 1900px;
+}
+
+.managementToolTopTitle {
+  font-size: 18px !important;
+  font-weight: 300;
+  
+  text-transform: uppercase;
+  line-height: 22px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px !important;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  font-style: normal;
+  margin-bottom: 20px;
+  min-height: 136px;
+}
+
+.subDescription {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  opacity: 0.8;
+  margin-bottom: 29px;
+}
+
+.joinContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.joinContainer > form {
+  width: 100%;
+}
+.joinInput {
+  width: 285px;
+  height: 58px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  margin-right: 12px;
+  padding: 0px 24px;
+  color: #ffffff;
+}
+
+.joinInput::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.joinInput:focus-visible {
+  opacity: 1;
+}
+
+.joinButtonContainer {
+  position: relative;
+  width: 444px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.springText {
+  text-decoration: none;
+}
+.joinArrowSpring {
+  position: absolute;
+  right: -20px;
+  top: -5px;
+  cursor: pointer;
+}
+
+.joinArrowSpring > a > span {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  opacity: 0.65;
+  color: #ffffff;
+  position: absolute;
+  white-space: nowrap;
+  top: 25px;
+  right: -81px;
+}
+
+.joinArrowSpring:hover span {
+  opacity: 1;
+}
+
+.joinArrowSpring:hover svg > g {
+  opacity: 1;
+}
+.joinButton {
+  width: 240px;
+  height: 57px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 62px;
+  line-height: 22px;
+  font-weight: 500, "Medium";
+  transition: linear 0.3s all;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinButton:hover {
+  background: #fff;
+  color: #2d70fd !important;
+  transition: linear 0.3s all;
+}
+
+.joinButtonMobile {
+  display: none;
+  width: 85px;
+  height: 57px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 62px;
+  line-height: 21.78px;
+  font-weight: 500, "Medium";
+  transition: linear 0.3s all;
+}
+
+.joinButtonMobile:hover {
+  background: #fff;
+  color: #2d70fd;
+  transition: linear 0.3s all;
+}
+
+.roadMapContainer {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 1px 7px rgba(0, 23, 71, 0.25);
+  border-radius: 24px;
+  padding: 16px;
+  max-width: 1200px;
+  max-height: 820px;
+}
+
+.teamAroundContainer {
+  width: 100%;
+  margin-top: 89px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.teamAroundContainer h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.teamAroundContent {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.005em;
+  opacity: 0.8 !important;
+  margin-top: 14px;
+  font-weight: 400;
+}
+
+.teamCompanyContainer {
+  width: 100%;
+  height: 165px !important;
+  margin-top: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: auto !important;
+}
+
+.teamCompanyItem {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  width: 150px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 59px;
+  border: 1px solid rgba(4, 28, 78, 0.1);
+}
+
+.teamCompanyItem:last-child {
+  margin-right: 0px;
+}
+
+.companyImage {
+  width: 80px;
+  opacity: 0.5;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem:hover .companyImage {
+  opacity: 1;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem > img {
+  min-width: 114px;
+  max-height: 32px;
+  opacity: 0.5;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem:hover img {
+  opacity: 1;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem > svg {
+  width: 120px;
+  opacity: 0.5;
+  transition: ease 0.3s all;
+}
+
+.teamCompanyItem:hover svg {
+  opacity: 1;
+  transition: ease 0.3s all;
+}
+
+.compamyItemTitle {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  width: 150px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  opacity: 0;
+  transition: ease 0.5s all;
+}
+
+.teamCompanyItem:hover {
+  cursor: pointer;
+}
+
+.teamCompanyItem:hover .compamyItemTitle {
+  transition: ease 0.5s all;
+  opacity: 1;
+  bottom: -43px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .joinArrowSpring {
+    display: none;
+  }
+  .joinButtonContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .managementToolTopTitle {
+    font-size: 14px !important;
+    margin-bottom: 14px;
+  }
+
+  .title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 16px;
+    min-height: auto;
+  }
+
+  .subDescription {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 21px;
+  }
+  .roadMapContainer {
+    height: 620px;
+    width: 100%;
+    padding: 12px;
+  }
+  .teamCompanyContainer {
+    margin-top: 32px !important;
+    overflow: auto !important;
+    height: 165px !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+  }
+
+  .teamAroundContent {
+    margin: 0 !important;
+  }
+
+  .teamAroundContainer h4 {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .teamAroundContainer {
+    margin-top: 70px !important;
+  }
+
+  .teamCompanyItem {
+    margin-right: 24px !important;
+    padding: 15px !important;
+    width: 150px !important;
+    height: 120px !important;
+  }
+
+  .managementContainer {
+    margin-top: 81px !important;
+  }
+
+  .joinInput {
+    max-width: 249px;
+    width: auto;
+    height: 57px;
+    outline-color: #fff;
+  }
+}
